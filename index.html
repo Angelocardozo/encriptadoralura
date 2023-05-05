@@ -9,12 +9,32 @@
     <title>Encriptador</title>
 </head>
 <body>
-  <input type="text" id="textoEncriptado">
-  <textarea name="resultado" id="textoDesencriptado" cols="30" 
-  rows="10"></textarea>
-  <button type="button" id="botonEncriptador">Encriptador</button>
-  <button type="button" id="botonDesencriptador">Desencriptador</button>
-  <button type="button" id="botonCopiar">Copiar</button>
+    <header>
+        <img src="logo1.png" alt="Logo aplicacion encriptador">
+    </header>
+    <main>
+        <section class="seccion_1">
+            
+                <textarea class="textarea" type="text" placeholder="Escriba su texto aquí" id="textoEncriptado"></textarea>
+                <div class="contenedor_botones">
+                <button type="button" class="botonEncriptador" id="botonEncriptador">Encriptador</button>
+                <button type="button" class="botonDesencriptador" id="botonDesencriptador">Desencriptador</button>
+                
+                </div>
+        </section>
+
+        <section class="seccion_2">
+            <div class="contenedor_imagen">
+                <img src="Muneco.png" alt="Muñeco">
+            </div>
+            <div class="contenedor_subtitulo">
+                <textarea class="Cuadroresultado" name="resultado" placeholder="No se encontro ningun mensaje, Escriba el texto que desea encriptar o desencriptar" id="textoDesencriptado" cols="30" rows="10"></textarea>
+            </div>
+            <div><button class="Btncopiar" type="button" id="botonCopiar">Copiar</button></div>
+            <div class="contenedor_parrafo">
+                
+            </div>
+        </section>
 </body>
 <script>
     var btn = document.querySelector("#botonEncriptador");
@@ -24,4 +44,8 @@
     var btn3 = document.querySelector("#botonCopiar");
     btn3.onclick = copiar;
 </script>
+</main>
+<footer>
+
+</footer>
 </html>
